@@ -104,17 +104,35 @@
     <br />
     <main class="container">
       <div class="row">
-        <div class="col-sm-4">
-          <img
-            src="img/HomepageContact.jpg"
-            alt="Contact image"
-            class="img-thumbnail"
-          />
+        <div class="col">
+          <form class="formcontainer">
+            <header style="color: rgb(21, 196, 154);">
+              <h1>Contact</h1>
+            </header>
+            <hr />
+
+            <div class="form-group">
+                <label for="exampleInputName">Name</label>
+                <input type="text" class="form-control" placeholder="First and Last name" />
+                <br>
+
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="example@gmail.com"
+              />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="mb-3">
+                <label for="Message">Message</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Please type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
         </div>
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4"></div>
-      </div>
     </main>
-    <p>This is contact page</p>
   </body>
 </html>

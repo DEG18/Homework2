@@ -58,6 +58,10 @@ a {
   margin: auto !important;
 }
 
+hr {
+  border-top: 4px solid rgba(0, 0, 0, 0.1);
+}
+
 .navbar-nav .dropdown-menu {
   position: static;
   float: none;
@@ -86,4 +90,22 @@ a {
 
 .img-thumbnail {
   border: none !important;
+}
+
+.formcontainer {
+  color: #121426;
+  text-align: left;
+  font-family: "futura-pt", sans-serif;
+  /* padding-bottom: 30px; */
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: rgb(21, 196, 154) !important;
+  border-color: rgb(21, 196, 154) !important;
+}
+
+textarea.form-control {
+  min-height: 200px;
+  height: auto;
 }
