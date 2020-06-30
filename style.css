@@ -109,3 +109,16 @@ textarea.form-control {
   min-height: 200px;
   height: auto;
 }
+
+.footer {
+  color: #fff;
+  padding: 30px;
+  clear: both;
+  font-family: "futura-pt", sans-serif;
+  text-align: center;
+  background-color: #121426;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(img/Navbar.jpg) !important;
+}
