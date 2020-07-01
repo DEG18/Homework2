@@ -105,30 +105,36 @@
     <main class="container">
       <div class="row">
         <div class="col">
-          <form class="formcontainer">
+          <form role="form" method="post" action="contact.php" class="formcontainer">
             <header style="color: rgb(21, 196, 154); text-align: left;">
               <h1>Contact</h1>
             </header>
             <hr />
             <!--  style="text-align: left; color: black;" -->
             <div class="form-group">
-                <label for="exampleInputName">Name</label>
-                <input type="text" class="form-control" placeholder="First and Last name" />
+                <label for="form_name">Name</label>
+                <input id="form_name" type="text" name="name" class="form-control" placeholder="First and Last name" required="required" data-error="Name is required" />
                 <br>
 
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="form_email">Email address</label>
+               <!-- id="exampleInputEmail1" -->
               <input
+              id="form_email"
                 type="email"
+                name="email"
                 class="form-control"
-                id="exampleInputEmail1"
+               
                 aria-describedby="emailHelp"
                 placeholder="example@gmail.com"
+                required="required"
+                data-error="Valid email is required."
               />
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="mb-3">
                 <label for="Message">Message</label>
-                <textarea class="form-control" id="validationTextarea" placeholder="Please type your message here..." required></textarea>
+                <!-- id="validationTextarea" -->
+                <textarea id="form_message" name="message" class="form-control"  placeholder="Please type your message here..." rows="4" required="required" data-error="Please,leave us a message."></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
