@@ -109,19 +109,20 @@
     <main class="container">
       <div class="row">
         <div class="col">
-          <form role="form" method="post" action="contact.php" class="formcontainer">
+          <!-- <form role="form" method="post" action="contact.php" class="formcontainer"> -->
+          <form action= "mailto:zengluyu252@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
             <header style="color: rgb(21, 196, 154); text-align: left;">
               <h1>Contact</h1>
             </header>
             <hr />
-            <!--  style="text-align: left; color: black;" -->
+  
             <div class="form-group">
                 <label for="form_name">Name</label>
                 <input id="form_name" type="text" name="name" class="form-control" placeholder="First and Last name" required="required" data-error="Name is required" />
                 <br>
 
               <label for="form_email">Email address</label>
-               <!-- id="exampleInputEmail1" -->
+    
               <input
               id="form_email"
                 type="email"
