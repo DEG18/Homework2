@@ -122,3 +122,9 @@ textarea.form-control {
 .navbar-light .navbar-toggler-icon {
   background-image: url(img/Navbar.jpg) !important;
 }
+
+.card-title,
+.card-text {
+  color: Black;
+  text-align: left;
+}
